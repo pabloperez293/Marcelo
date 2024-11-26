@@ -139,7 +139,7 @@ nav {
     flex-direction: column;
     gap: 2rem;
     background-color: var(--second-color);
-    /* transform: translateY(100%); */
+    transform: translateY(-100%);
     transition: 0.5s;
     z-index: -1;
 }

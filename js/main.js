@@ -6,5 +6,9 @@ menuBtn.addEventListener("click", () => {
     navLinks.classList.toggle("open");
 
     const isOpen = navLinks.classList.contains("open");
-    menuBtnIcon
-})
+    menuBtnIcon.setAttribute("class", isOpen? "fa-solid fa-xmark": "fa-solid fa-bars")
+});
+navLinks.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuBtnIcon.setAttribute("class", "fa-solid fa-bars");
+});
