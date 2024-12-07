@@ -98,7 +98,7 @@ body {
 }
 
 .header {
-    background-image: url();
+    background-image: url("/img/cañoGas1.jpeg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -155,29 +155,46 @@ nav {
     color: var(--white);
     transition: 0.3s;
 }
+
 .navBtn {
     display: none;
 }
-.headerContainer{
+
+.headerContainer {
     padding-block: 10rem 15rem;
 }
-.headerContainer p {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    color: var(--white);
-    text-align: center;
-    opacity: 0.6;
-}
-.headerContainer h1{
+
+.headerContainer h1 {
     font-size: 4rem;
     font-weight: 500;
     line-height: 4.5rem;
     color: var(--white);
     text-align: center;
+    opacity: 0.9;
+}
+
+.headerContainer h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--white);
+    text-align: center;
+   
+}
+
+.headerContainer h1 span{
+    color: var(--primary-color);
+    font-size: 4rem;
+    font-weight: 500;
+
+}
+.containerH1 {
+    width: 100%;
+    background-color: rgba(39, 38, 38, 0.612);
+    border-radius: 15px;
 }
 /* Responsive  */
 @media (width > 768px) {
-    nav{
+    nav {
         padding: 2rem 1rem;
         position: static;
         display: flex;
@@ -185,21 +202,25 @@ nav {
         justify-content: space-between;
         background-color: var(--second-color);
     }
-    .navBar{
+
+    .navBar {
         padding: 0;
         background-color: transparent;
     }
-    .navMenuBtn{
+
+    .navMenuBtn {
         display: none;
     }
-    .navLinks{
+
+    .navLinks {
         padding: 0;
         width: unset;
         position: static;
         transform: none;
         flex-direction: row;
     }
-    .navLinks a::after{
+
+    .navLinks a::after {
         position: absolute;
         content: "";
         left: 0;
@@ -210,7 +231,8 @@ nav {
         transition: 0.3s;
         transform-origin: left;
     }
-    .navLinks a:hover::after{
+
+    .navLinks a:hover::after {
         width: 100%;
     }
 }
